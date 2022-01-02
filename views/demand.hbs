@@ -1,0 +1,27 @@
+<!-- navigation -->
+<h1>需求預測</h1>
+<form action="/demand/query"  class="ui form">
+    <div class="three fields">
+        <div class="three wide field">
+            <label>預測日期:</label>
+            <input id="date" type="date" name="date" min="2022-01-05">
+        </div>
+        <div class="two wide field">
+            <label>產品:</label>
+            <select class="ui dropdown" name="product" >
+                 <option disabled selected value> -- select an option -- </option>
+                <option value="牛奶大包裝">牛奶大包裝</option>
+                <option value="牛奶小包裝">牛奶小包裝</option>
+                <option value="草莓大包裝">草莓大包裝</option>
+                <option value="草莓小包裝">草莓小包裝</option>
+                <option value="巧克力大包裝">巧克力大包裝</option>
+                <option value="巧克力小包裝">巧克力小包裝</option>
+            </select>
+        </div>
+       
+        <div class="field">
+            <label>&nbsp&nbsp</label>
+            <button type="submit" class="ui teal button">送出</button>
+        </div>
+    </div>
+</form>

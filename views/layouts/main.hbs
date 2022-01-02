@@ -1,0 +1,134 @@
+<!-- navigation bar-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    <title>
+        
+            小泡芙產銷資訊系統
+        
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+<link rel="stylesheet" href="/static/stylesheets/index.css">
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.src.js"></script>
+<script src="/static/js/index.js"></script>
+<script src="/static/js/dropdown.js"></script>
+
+
+    <style>
+        main{
+            padding: 1% 1% 15% 1%;
+            font-size: 13.5pt;
+            font-family: Microsoft JhengHei!important;
+        }
+    </style>
+</head>
+<body>
+    <div class="ui inverted menu">
+    <div class="ui container">
+        <a class="header item" href="/">
+            
+            {{!-- <img id="nav-img" src="/static/images/logo.png"> --}}
+            回主畫面
+        </a>
+        <div class="ui simple dropdown item">
+            訂單 <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="item" href="/order/new">新增訂單</a>
+                <a class="item" href="/order/">訂單總覽</a>
+            </div>
+        </div>
+    
+        <div class="ui simple dropdown item">
+            顧客 <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="item" href="/customer/new">新增顧客</a>
+                <a class="item" href="/customer/">顧客總覽</a>
+            </div>
+        </div>
+
+        <a class="item" href="/inventory">存貨管理</a>
+        <a class="item" href="/schedule">生產排程</a>
+
+        <div class="ui simple dropdown item">
+            銷售分析 <i class="dropdown icon"></i>
+            <div class="menu">
+                <a class="item" href="/activity/">產品銷售成長率</a>
+                <a class="item" href="/transaction/rate/">總銷售成長率</a>
+                <a class="item" href="/transaction/rate/">留存率</a>
+                <a class="item" href="/transaction/rate/">客群分析</a>
+            </div>
+        </div>
+       
+        <a class="item" href="/demand">需求預測</a>
+    </div>
+</div>
+
+<br>
+
+{{{body}}}
+
+
+{{!-- <script src="/static/js/dropdown.js"></script>
+
+    <div class="ui container">
+        <main>
+            
+<h2>生產排程</h2>
+<br>
+<form action="/inventory/schedule" method="POST" class="ui form"><input type="hidden" name="csrfmiddlewaretoken" value="bL0Mn318r16U25aRyM0BFdvRZ1rWzW5oiaRVVp0Tp2yTC54Si1rSfGjAymqmzws6">
+    <div class="three fields">
+        <div class="three wide field">
+            <label>需求日期:</label>
+            <input id="date" type="date" name="date">
+        </div>
+        <div class="two wide field">
+            <label>產品:</label>
+            <select class="ui dropdown" name="umbrella">
+                <option value="雞汁小雞麵">雞汁小雞麵</option>
+                <option value="辣味小雞麵">辣味小雞麵</option>
+                <option value="海苔小雞麵">海苔小雞麵</option>
+                <option value="起司小雞麵">起司小雞麵</option>
+                <option value="BBQ小雞麵">BBQ小雞麵</option>
+            </select>
+        </div>
+        <div class="two wide field">
+            <label>數量:</label>
+            <input type="text" id="num" name="num_of_umbrella">
+        </div>
+        <div class="field">
+            <label>&nbsp&nbsp</label>
+            <button type="submit" class="ui teal button">送出</button>
+        </div>
+    </div>
+</form>
+<br>
+
+<p></p>
+
+
+
+
+<script src="/static/js/dropdown.js"></script>
+
+
+        </main>
+        
+        
+    </div> --}}
+</body>
+</html>

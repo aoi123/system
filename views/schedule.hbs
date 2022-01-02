@@ -1,0 +1,34 @@
+<h2>生產排程</h2>
+
+<br>
+<form action="/schedule/query"  class="ui form">
+    <div class="three fields">
+        <div class="three wide field">
+            <label>需求日期:</label>
+            <input id="date" type="date" name="date" >
+        </div>
+        <div class="two wide field">
+            <label>產品:</label>
+            <select class="ui dropdown" name="product" >
+                 <option disabled selected value> -- select an option -- </option>
+                <option value="牛奶大包裝">牛奶大包裝</option>
+                <option value="牛奶小包裝">牛奶小包裝</option>
+                <option value="草莓大包裝">草莓大包裝</option>
+                <option value="草莓小包裝">草莓小包裝</option>
+                <option value="巧克力大包裝">巧克力大包裝</option>
+                <option value="巧克力小包裝">巧克力小包裝</option>
+            </select>
+        </div>
+        <div class="two wide field">
+            <label>數量:</label>
+            <input type="text" id="num" name="number">
+        </div>
+        <div class="field">
+            <label>&nbsp&nbsp</label>
+            <button type="submit" class="ui teal button">送出</button>
+        </div>
+    </div>
+</form>
+<br>
+
+  
